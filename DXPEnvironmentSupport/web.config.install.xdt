@@ -3,33 +3,46 @@
   <configSections>
     <section name="dxpConfigurationSection" type="DXPEnvironmentSupport.Configuration.DXPConfigurationSection,DXPEnvironmentSupport" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)" />
   </configSections>
+  <appSettings>
+    <add key="episerver:EnvironmentName" value="Local" xdt:Transform="InsertIfMissing" xdt:Locator="Match(key)" />
+  </appSettings>
   <dxpConfigurationSection enabled="false" xdt:Transform="InsertAfter(/configuration/configSections)">
     <environment environmentType="Integration">
       <sites>
-        <site id="00000000-0000-0000-0000-000000000000" url="int.epi.com">
+        <site id="00000000-0000-0000-0000-000000000000" url="int.epi.com" name="IntSite1" updateAllHosts="true">
           <hosts>
             <host hostName="*" culture="" type="" scheme="" />
-            <host hostName="int.epi.com" culture="" type="" scheme="" />
+            <host hostName="int.epi.com" culture="" type="Primary" scheme="" />
+            <host hostName="perm.epi.com" culture="" type="RedirectPermanent" scheme="" />
+            <host hostName="temp.epi.com" culture="" type="RedirectTemporary" scheme="" />
+            <host hostName="edit.epi.com" culture="" type="Edit" scheme="" />
           </hosts>
         </site>
+        <!--
+        Sample site 2
+        <site id="10000000-0000-0000-0000-000000000000" url="int2.epi.com" name="IntSite2" updateAllHosts="true">
+          <hosts>
+            <host hostName="int2.epi.com" culture="" type="Primary" scheme="" />
+          </hosts>
+        </site>-->
       </sites>
     </environment>
     <environment environmentType="Preproduction">
       <sites>
-        <site id="00000000-0000-0000-0000-000000000000" url="prep.epi.com">
+        <site id="00000000-0000-0000-0000-000000000000" url="prep.epi.com" name="PreProdSite1" updateAllHosts="true">
           <hosts>
             <host hostName="*" culture="" type="" scheme="" />
-            <host hostName="prep.epi.com" culture="" type="" scheme="" />
+            <host hostName="prep.epi.com" culture="" type="Primary" scheme="" />
           </hosts>
         </site>
       </sites>
     </environment>
     <environment environmentType="Production">
       <sites>
-        <site id="00000000-0000-0000-0000-000000000000" url="prod.epi.com">
+        <site id="00000000-0000-0000-0000-000000000000" url="prod.epi.com" name="ProdSite1" updateAllHosts="true">
           <hosts>
             <host hostName="*" culture="" type="" scheme="" />
-            <host hostName="prod.epi.com" culture="" type="" scheme="" />
+            <host hostName="prod.epi.com" culture="" type="Primary" scheme="" />
           </hosts>
         </site>
       </sites>
