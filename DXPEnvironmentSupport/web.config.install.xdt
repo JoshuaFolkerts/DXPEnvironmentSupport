@@ -14,7 +14,7 @@
         </site>
       </sites>
     </environment>
-    <environment environmentType="PreProduction">
+    <environment environmentType="Preproduction">
       <sites>
         <site id="00000000-0000-0000-0000-000000000000" url="prep.epi.com">
           <hosts>

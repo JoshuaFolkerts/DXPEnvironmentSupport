@@ -9,7 +9,7 @@ namespace DXPEnvironmentSupport.Configuration
 
         Integration,
 
-        PreProduction,
+        Preproduction,
 
         Production
     }

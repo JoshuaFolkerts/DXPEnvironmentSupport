@@ -19,7 +19,7 @@ The web.config structure follows standard hierarchial for the sites node.  Allow
             </site>
         </sites>
         </environment>
-        <environment environmentType="PreProduction">
+        <environment environmentType="Preproduction">
         <sites>
             <site id="e8829d0d-4901-4ced-80e2-b052b7d5a8ca" url="http://localhost:49631/">
             <hosts>

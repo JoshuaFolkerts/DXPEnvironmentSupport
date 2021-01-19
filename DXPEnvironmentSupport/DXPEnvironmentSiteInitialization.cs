@@ -16,12 +16,12 @@ namespace DXPEnvironmentSupport
     {
         public void Initialize(InitializationEngine context)
         {
-            string environment = ConfigurationManager.AppSettings["episerver:EnvironmentName"];
-            if (!string.IsNullOrWhiteSpace(environment))
+            if (DXPConfiguration.IsEnabled())
             {
-                if (Enum.TryParse(environment, out DXPEnviromentType result))
+                string environment = ConfigurationManager.AppSettings["episerver:EnvironmentName"];
+                if (!string.IsNullOrWhiteSpace(environment))
                 {
-                    if (DXPConfiguration.IsEnabled())
+                    if (Enum.TryParse(environment, out DXPEnviromentType result))
                     {
                         var environmentConfig = DXPConfiguration.GetEnvironment(result);
                         if (environmentConfig != null)
