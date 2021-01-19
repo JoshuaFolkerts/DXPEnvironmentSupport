@@ -1,14 +1,14 @@
-﻿using DXPEnviromentSupport.Configuration;
+﻿using DXPEnvironmentSupport.Configuration;
 using EPiServer.Framework;
 using EPiServer.Framework.Initialization;
 using EPiServer.Web;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
-using static DXPEnviromentSupport.Configuration.HostsCollection;
-using static DXPEnviromentSupport.Configuration.SitesCollection;
+using static DXPEnvironmentSupport.Configuration.HostsCollection;
+using static DXPEnvironmentSupport.Configuration.SitesCollection;
 
-namespace DXPEnviromentSupport
+namespace DXPEnvironmentSupport
 {
     [InitializableModule]
     [ModuleDependency(typeof(EPiServer.Web.InitializationModule))]

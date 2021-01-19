@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DXPEnviromentSupport.Configuration
+namespace DXPEnvironmentSupport.Configuration
 {
     [Flags]
     public enum DXPEnviromentType

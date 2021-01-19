@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DXPEnviromentSupport.Configuration
+namespace DXPEnvironmentSupport.Configuration
 {
     public class EnvironmentConfigElement : ConfigurationElement
     {

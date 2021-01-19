@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>DXPEnvironmentSupport</id>
+    <version>1.0.0</version>
+    <title>DXP Environment Support</title>
+    <authors>Joshua Folkerts</authors>
+    <owners>Joshua Folkerts</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/JoshuaFolkerts/DXPEnvironmentSupport</projectUrl>
+    <description>Allows you to manage your sites via initialization in DXP Environments The web.config structure follows standard hierarchial for the sites node. Allows you to manage multiple sites and hosts per environment along with setting default wildcard as well.</description>
+    <language></language>
+    <tags>EPiServer, DXP, Configuration</tags>
+  </metadata>
+  <files>
+    <file src="content\web.config.install.xdt" target="content\web.config.install.xdt" />
+    <file src="content\web.config.uninstall.xdt" target="content\web.config.uninstall.xdt" />
+    <file src="lib\DXPEnvironmentSupport.dll" target="lib\DXPEnvironmentSupport.dll" />
+    <file src="lib\DXPEnvironmentSupport.pdb" target="lib\DXPEnvironmentSupport.pdb" />
+  </files>
+</package>

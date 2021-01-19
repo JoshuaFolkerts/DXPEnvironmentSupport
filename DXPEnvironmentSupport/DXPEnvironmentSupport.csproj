@@ -7,8 +7,8 @@
     <ProjectGuid>{574B75DD-0C85-4AE3-B043-A51759A4967F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DXPEnviromentSupport</RootNamespace>
-    <AssemblyName>DXPEnviromentSupport</AssemblyName>
+    <RootNamespace>DXPEnvironmentSupport</RootNamespace>
+    <AssemblyName>DXPEnvironmentSupport</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

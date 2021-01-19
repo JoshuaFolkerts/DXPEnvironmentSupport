@@ -4,3 +4,6 @@
 [Dd]ebug
 packages
 *.user
+.vs/DXPEnviromentSupport/v16
+.vs/DXPEnvironmentSupport/v16
+*.nupkg

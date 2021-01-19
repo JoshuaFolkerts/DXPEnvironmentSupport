@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Configuration;
 
-namespace DXPEnviromentSupport.Configuration
+namespace DXPEnvironmentSupport.Configuration
 {
     public class DXPConfiguration
     {
