@@ -6,43 +6,41 @@ The web.config structure follows standard hierarchial for the sites node.  Allow
 
     <dxpConfigurationSection enabled="true">
         <environment environmentType="Integration">
-        <sites>
-            <site id="e8829d0d-4901-4ced-80e2-b052b7d5a8ca" name="My Demo" url="http://localhost.com" updateAllHosts="true">
-            <hosts>
-                <host hostName="*" culture="" type="" scheme="" />
-                <host hostName="josh.int.com" culture="" type="" scheme="" />
-                <host hostName="epi.int.com" culture="" type="RedirectPermanent" scheme="https" />
-                <host hostName="work.int.com" culture="" type="RedirectPermanent" scheme="" />
-                <host hostName="all.int.com" culture="" type="RedirectPermanent" scheme="" />
-                <host hostName="proj.int.com" culture="" type="RedirectPermanent" scheme="" />
-            </hosts>
-            </site>
-        </sites>
+            <sites>
+                <site id="00000000-0000-0000-0000-000000000000" url="int.epi.com" name="IntSite1" updateAllHosts="true">
+                    <hosts>
+                        <host hostName="*" culture="" type="" scheme="" />
+                        <host hostName="int.epi.com" culture="" type="Primary" scheme="" />
+                        <host hostName="perm.epi.com" culture="" type="RedirectPermanent" scheme="" />
+                        <host hostName="temp.epi.com" culture="" type="RedirectTemporary" scheme="" />
+                        <host hostName="edit.epi.com" culture="" type="Edit" scheme="" />
+                    </hosts>
+                </site>
+                <site id="10000000-0000-0000-0000-000000000000" url="int2.epi.com" name="IntSite2" updateAllHosts="true">
+                    <hosts>
+                        <host hostName="int2.epi.com" culture="" type="Primary" scheme="" />
+                    </hosts>
+                </site>
+            </sites>
         </environment>
         <environment environmentType="Preproduction">
-        <sites>
-            <site id="e8829d0d-4901-4ced-80e2-b052b7d5a8ca" url="http://localhost:49631/">
-            <hosts>
-                <host hostName="josh.prep.com" culture="" type="" scheme="" />
-                <host hostName="epi.prep.com" culture="" type="" scheme="" />
-                <host hostName="work.prep.com" culture="" type="" scheme="" />
-                <host hostName="all.prep.com" culture="" type="" scheme="" />
-                <host hostName="proj.prep.com" culture="" type="" scheme="" />
-            </hosts>
-            </site>
-        </sites>
+            <sites>
+                <site id="00000000-0000-0000-0000-000000000000" url="prep.epi.com" name="PreProdSite1" updateAllHosts="true">
+                    <hosts>
+                        <host hostName="*" culture="" type="" scheme="" />
+                        <host hostName="prep.epi.com" culture="" type="Primary" scheme="" />
+                    </hosts>
+                </site>
+            </sites>
         </environment>
         <environment environmentType="Production">
-        <sites>
-            <site id="e8829d0d-4901-4ced-80e2-b052b7d5a8ca" url="http://localhost:49631/">
-            <hosts>
-                <host hostName="www.prod.com" culture="" type="" scheme="" />
-                <host hostName="epi.prod.com" culture="" type="" scheme="" />
-                <host hostName="work.prod.com" culture="" type="" scheme="" />
-                <host hostName="all.prod.com" culture="" type="" scheme="" />
-                <host hostName="proj.prod.com" culture="" type="" scheme="" />
-            </hosts>
-            </site>
-        </sites>
+            <sites>
+                <site id="00000000-0000-0000-0000-000000000000" url="prod.epi.com" name="ProdSite1" updateAllHosts="true">
+                    <hosts>
+                        <host hostName="*" culture="" type="" scheme="" />
+                        <host hostName="prod.epi.com" culture="" type="Primary" scheme="" />
+                    </hosts>
+                </site>
+            </sites>
         </environment>
     </dxpConfigurationSection>
