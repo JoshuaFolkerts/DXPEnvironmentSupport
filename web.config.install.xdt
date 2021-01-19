@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <configSections>
+    <add key="dxpConfigurationSection" type="DXPEnviromentSupport.Configuration.DXPConfigurationSection,DXPEnviromentSupport" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)" />
+  </configSections>
+  <dxpConfigurationSection enabled="false" xdt:Transform="InsertIfMissing">
+    <environment environmentType="Integration">
+      <sites>
+        <site id="00000000-0000-0000-0000-000000000000" url="int.epi.com">
+          <hosts>
+            <host hostName="*" culture="" type="" scheme="" />
+            <host hostName="int.epi.com" culture="" type="" scheme="" />
+          </hosts>
+        </site>
+      </sites>
+    </environment>
+    <environment environmentType="PreProduction">
+      <sites>
+        <site id="00000000-0000-0000-0000-000000000000" url="prep.epi.com">
+          <hosts>
+            <host hostName="*" culture="" type="" scheme="" />
+            <host hostName="prep.epi.com" culture="" type="" scheme="" />
+          </hosts>
+        </site>
+      </sites>
+    </environment>
+    <environment environmentType="Production">
+      <sites>
+        <site id="00000000-0000-0000-0000-000000000000" url="prod.epi.com">
+          <hosts>
+            <host hostName="*" culture="" type="" scheme="" />
+            <host hostName="prod.epi.com" culture="" type="" scheme="" />
+          </hosts>
+        </site>
+      </sites>
+    </environment>
+  </dxpConfigurationSection>
+</configuration>
