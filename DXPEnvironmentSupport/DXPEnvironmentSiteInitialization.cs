@@ -1,4 +1,5 @@
 ﻿using DXPEnvironmentSupport.Configuration;
+using EPiServer.Data;
 using EPiServer.Framework;
 using EPiServer.Framework.Initialization;
 using EPiServer.Web;
@@ -18,8 +19,9 @@ namespace DXPEnvironmentSupport
         {
             if (DXPConfiguration.IsEnabled())
             {
+                var dbMode = context.Locate.Advanced.GetInstance<IDatabaseMode>().DatabaseMode;
                 string environment = ConfigurationManager.AppSettings["episerver:EnvironmentName"];
-                if (!string.IsNullOrWhiteSpace(environment))
+                if (!string.IsNullOrWhiteSpace(environment) && dbMode != DatabaseMode.ReadOnly)
                 {
                     if (Enum.TryParse(environment, out DXPEnviromentType result))
                     {
